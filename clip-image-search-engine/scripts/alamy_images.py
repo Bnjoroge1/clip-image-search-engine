@@ -18,7 +18,7 @@ def fetch_alamy_image_urls(search_query):
                 ar_filename = image.get('AR')
                 
                 # Construct image URL using the AR identifier
-                image_url = f"https://c7.alamy.com/zooms/9/1/{ar_filename}.jpg"  # Modify URL structure if needed
+                image_url = f"https://c7.alamy.com/zooms/9/1/{ar_filename}.jpg"  
                 image_urls.append(image_url)
                 
                 # Image data
