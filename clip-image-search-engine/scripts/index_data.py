@@ -12,7 +12,7 @@ from clip_image_search.process_data import clip_process_data
 es = Elasticsearch([{'host': 'ec2-16-170-159-232.eu-north-1.compute.amazonaws.com', 'port': 9200}])
 
 # Establish a connection to your Solr instance
-solr = pysolr.Solr('http://ec2-16-170-159-232.eu-north-1.compute.amazonaws.com:8984/solr/features/', timeout=10)
+solr = pysolr.Solr('http://ec2-16-170-159-232.eu-north-1.compute.amazonaws.com:8984/solr/features/', timeout=30)
 
 # Indexing data into Elasticsearch
 def index_data(keyword, results):
